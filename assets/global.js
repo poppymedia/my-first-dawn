@@ -513,7 +513,7 @@ class VariantSelects extends HTMLElement {
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
-    } console.log('Unavailable: ' + this.parentElement.type);
+    } console.log('Unavailable: ' + this.tagName);
   }
 
   updateOptions() {
