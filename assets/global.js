@@ -504,7 +504,7 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
-    console.log('Change variant: ' + this.currentVariant);
+    
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -513,7 +513,7 @@ class VariantSelects extends HTMLElement {
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
-    }
+    } console.log('Change variant: ' + this.currentVariant.id);
   }
 
   updateOptions() {
