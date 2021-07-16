@@ -504,7 +504,7 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
-    console.log('Change variant');
+    console.log('Change variant: ' + this.currentVariant);
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
