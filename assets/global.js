@@ -495,7 +495,7 @@ customElements.define('slider-component', SliderComponent);
 
 class VariantSelects extends HTMLElement {
   constructor() {
-    super(); this.addEventListener('click', this.onVariantClick);
+    super();
     this.addEventListener('change', this.onVariantChange);
   }
 
@@ -504,7 +504,7 @@ class VariantSelects extends HTMLElement {
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
-    console.log('Update change: ' + this.querySelectorAll('input').tagName);
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -514,7 +514,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
     } 
-  } onVariantClick() { console.log('Clicked: ' + this.tagName); }
+  }
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
@@ -619,7 +619,7 @@ class VariantRadios extends VariantSelects {
 
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    this.options = fieldsets.map((fieldset) => {
+    this.options = fieldsets.map((fieldset) => { console.log('Legend: ' + fieldset.querySelectorAll('legend').innerHTML);
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
     });
   }
