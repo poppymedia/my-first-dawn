@@ -513,7 +513,7 @@ class VariantSelects extends HTMLElement {
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
-    } console.log('Unavailable Tag: ' + this.tagName);
+    } console.log('Unavailable Checked: ' + this.querySelector("input[name=rate]:checked").id);
   }
 
   updateOptions() {
