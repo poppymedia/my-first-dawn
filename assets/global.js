@@ -601,7 +601,7 @@ class VariantSelects extends HTMLElement {
     const addButton = document.getElementById(`product-form-${this.dataset.section}`)?.querySelector('[name="add"]');
     if (!addButton) return;
     addButton.textContent = window.variantStrings.unavailable;
-    document.getElementById(`price-${this.dataset.section}`)?.classList.add('visibility-hidden'); console.log('Unavailable: ' + ${this.dataset.section});
+    document.getElementById(`price-${this.dataset.section}`)?.classList.add('visibility-hidden'); console.log('Unavailable');
   }
 
   getVariantData() {
