@@ -507,7 +507,7 @@ class VariantSelects extends HTMLElement {
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
-      this.setUnavailable(); console.log('Unavailable: ' + this.input.id);
+      this.setUnavailable(); this.setAttribute('disabled', true);
     } else {
       this.updateMedia();
       this.updateURL();
