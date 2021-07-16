@@ -514,7 +514,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
     } 
-  } onVariantClick() { console.log('Clicked'); }
+  } onVariantClick() { console.log('Clicked: ' + this.tagName); }
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
