@@ -15,6 +15,7 @@
 
 .price--end {
   justify-content: flex-end;
+  min-width: 10em;
 }
 
 .price dl {
