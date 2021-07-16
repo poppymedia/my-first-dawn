@@ -495,7 +495,7 @@ customElements.define('slider-component', SliderComponent);
 
 class VariantSelects extends HTMLElement {
   constructor() {
-    super(); this.addEventListener('onclick', this.onVariantClick);
+    super(); this.addEventListener('click', this.onVariantClick);
     this.addEventListener('change', this.onVariantChange);
   }
 
