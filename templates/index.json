@@ -76,6 +76,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/woman-poses-in-a-studio.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
