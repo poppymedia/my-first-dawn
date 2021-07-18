@@ -1,12 +1,10 @@
 {
    "metafields":[
       {
+         "owner_resource":"product",
          "namespace":"data",
          "key":"measurements",
-         "value":"{\"value\":100.0,\"unit\":\"cm\"}",
-         "value_type":"json_string",
-         "owner_id":{{ product.id }},
-         "owner_resource":"product"
+         "value":"{{ product.metafields.data.measurements }}"
       }
    ]
 }
