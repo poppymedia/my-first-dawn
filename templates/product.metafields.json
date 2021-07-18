@@ -1,4 +1,5 @@
 {
+  "layout": "json",
   "sections": {
     "main": {
       "type": "main-product",
