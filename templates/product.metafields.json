@@ -75,7 +75,7 @@
     }
   },
   "order": [
-    "main",
-    "product-recommendations"
+    "product-recommendations",
+    "main"
   ]
 }
