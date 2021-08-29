@@ -82,6 +82,10 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+          {%- when 'subtitle' -%}
+            <h1 class="product__subtitle" {{ block.shopify_attributes }}>
+              {{ product.subtitle | escape }}
+            </h1>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
